@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Погода</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+
+        #search-box {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        #search-input {
+            border: none;
+            outline: none;
+            margin-left: 10px;
+        }
+
+        #weather {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="search-box">
+            <!-- font awesome icon search -->
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-input" placeholder="Введите город и нажмите Enter">
+        </div>
+        <div id="weather"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
